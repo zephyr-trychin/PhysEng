@@ -18,15 +18,7 @@ public class Hitbox {
 
 
     public int collide (Hitbox o){
-        double diffX = x - o.x;
-        double diffY = y - o.y;
-        double sumW = (w + o.w) /2;
-        double sumH = (h + o.h) /2;
-        if (Math.abs(diffX) < sumW && Math.abs(diffY) < sumH) {
-            if (Math.abs(diffX) < (Math.abs(diffY)) {
-
-            }
-        }
+        
     }
 
 
