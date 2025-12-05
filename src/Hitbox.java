@@ -18,10 +18,17 @@ public class Hitbox {
 
 
     public int collide (Hitbox o){
-        
+
     }
 
+    public double intersect (V2 p, V2 q, V2 s, V2 r) {
+        V2 qpdiff = new V2 (q.V2[0] - p.V2[0],q.V2[1] - p.V2[1]);
+        double denominator = V2.crossProd(r, s);
+        V2 tNumerator = V2.crossProd(qpdiff, s);
+        V2 uNumerator = V2.crossProd(qpdiff, r);
 
+
+    }
 
     public void update (double gravX, double gravY, double timeStep) {
         xVel += gravX * timeStep;
